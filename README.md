@@ -14,3 +14,13 @@
 
 > 打开Preferences，逐层进入 Java——> Code Style ——> Formatter，最后点击Import...将模板文件导入即可。
 
+### 2.codetemplates.xml文件
+
+*  文件说明
+
+> 在eclipse中针对代码文件的代码注释等模板
+
+*  使用说明
+
+> 打开Preferences，逐层进入 Java——> Code Style ——> Code Templates，最后点击Import...将模板文件导入即可。
+

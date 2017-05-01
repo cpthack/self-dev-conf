@@ -331,11 +331,16 @@ kbd {
 <!-- 该代码在生成html网页时，可以辅助生成左侧悬浮的目录导航 code start -->
 
 <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+
 <script type="text/javascript" src="js/jquery.ztree.core-3.5.js"></script>
+
 <script type="text/javascript" src="js/jquery.ztree.all-3.5.js"></script>
+
 <script type="text/javascript" src="js/ztree_toc.js"></script>
-<link rel="stylesheet" href="css/zTreeStyle/zTreeStyle.css"
-    type="text/css">
+
+<p><link rel="stylesheet" href="css/zTreeStyle/zTreeStyle.css"
+    type="text/css"></p>
+
 <script type="text/javascript">
     $(document).ready(function() {
         $('#tree').ztree_toc({
@@ -349,7 +354,7 @@ kbd {
                         overflow: 'auto',
                         position: 'fixed',
                         'z-index': 2147483647,
-                        border: '2px solid #ccc',
+                        border: '1px solid #ccc',
                         left: '0',
                         top: '0'
              }
@@ -359,17 +364,30 @@ kbd {
 
 <div id="tree" class="ztree"></div>
 
-<!-- 主要参考：-->
+<!-- 
+主要参考：
+1、https://github.com/i5ting/i5ting_ztree_toc
+2、http://ruby-china.org/topics/17028
+-->
+
+<!-- 如果要生成pdf文档的话，需要把代码块进行注释-->
 
 <!-- 该代码在生成html网页时，可以辅助生成左侧悬浮的目录导航 code end -->
 
-<h2 id="toc_0">xxx系统接口文档</h2>
+<h1 id="toc_0">xxx系统接口文档</h1>
 
-<p>
-   该文档是提供给第三方用户接入的指导说明.淘宝开放平台（Taobao Open Platform）是基于淘宝各类电子商务业务的开放平台，提供外部合作伙伴参与服务淘宝用户的各类原材料，例如API、账号体系、数据安全等。她是大淘宝电子商务基础服务的重要开放途径，将推动各行各业定制、创新、进化，并最终促成新商业文明生态圈的建立。我们的使命是把淘宝网的商品、用户、交易、物流等一系列电子商务基础服务，像水、电、煤一样输送给有需要的商家、开发者、社区媒体和各行各业。。
-</p>
+<ul>
+<li><p>该文档是提供给第三方用户接入的指导说明.淘宝开放平台（Taobao Open Platform）是基于淘宝各类电子商务业务的开放平台，提供外部合作伙伴参与服务淘宝用户的各类原材料，例如API、账号体系、数据安全等。</p></li>
+<li><p>她是大淘宝电子商务基础服务的重要开放途径，将推动各行各业定制、创新、进化，并最终促成新商业文明生态圈的建立。我们的使命是把淘宝网的商品、用户、交易、物流等一系列电子商务基础服务，像水、电、煤一样输送给有需要的商家、开发者、社区媒体和各行各业。</p></li>
+</ul>
 
-<h2 id="toc_1">一、新手指引</h2>
+<hr>
+
+<h2 id="toc_1">目录</h2>
+
+<p>[TOC]</p>
+
+<h2 id="toc_2">一、新手指引</h2>
 
 <ul>
 <li>Step 1: 获取App Key和App Secret</li>
@@ -477,15 +495,15 @@ kbd {
     System.out.println(response.toString());
 </code></pre></div>
 
-<h2 id="toc_2">二、应用接入规范</h2>
+<h2 id="toc_3">二、应用接入规范</h2>
 
 <p>待后期补充。</p>
 
-<h2 id="toc_3">三、API文档</h2>
+<h2 id="toc_4">三、API文档</h2>
 
-<h3 id="toc_4">3.1 机器人相关接口说明</h3>
+<h3 id="toc_5">3.1 机器人相关接口说明</h3>
 
-<h4 id="toc_5">3.1.1 增加机器人</h4>
+<h4 id="toc_6">3.1.1 增加机器人</h4>
 
 <ul>
 <li><p><strong>请求URL</strong></p>
@@ -566,7 +584,7 @@ kbd {
 </blockquote></li>
 </ul>
 
-<h4 id="toc_6">3.1.2 查看机器人</h4>
+<h4 id="toc_7">3.1.2 查看机器人</h4>
 
 <ul>
 <li><p><strong>请求URL</strong></p>
@@ -672,7 +690,7 @@ kbd {
 </blockquote></li>
 </ul>
 
-<h4 id="toc_7">3.1.3 修改机器人可用性</h4>
+<h4 id="toc_8">3.1.3 修改机器人可用性</h4>
 
 <ul>
 <li><p><strong>请求URL</strong></p>
@@ -753,7 +771,7 @@ kbd {
 </blockquote></li>
 </ul>
 
-<h4 id="toc_8">3.1.4 删除机器人</h4>
+<h4 id="toc_9">3.1.4 删除机器人</h4>
 
 <ul>
 <li><p><strong>请求URL</strong></p>
@@ -829,9 +847,9 @@ kbd {
 </blockquote></li>
 </ul>
 
-<h2 id="toc_9">四、常见问题指引</h2>
+<h2 id="toc_10">四、常见问题指引</h2>
 
-<h3 id="toc_10">4.1 问题反馈</h3>
+<h3 id="toc_11">4.1 问题反馈</h3>
 
 <div><pre><code class="language-none">第三方开发者（简称ISV）可以通过淘宝开放平台（简称TOP）提供的ISV支持中心获取TOP技术人员的技术支持服务。
 
@@ -846,9 +864,9 @@ kbd {
 
 联系官方QQ：1044559878</code></pre></div>
 
-<h3 id="toc_11">4.2 接口返回码说明</h3>
+<h3 id="toc_12">4.2 接口返回码说明</h3>
 
-<h4 id="toc_12">4.2.1 系统级错误码</h4>
+<h4 id="toc_13">4.2.1 系统级错误码</h4>
 
 <blockquote>
 <table>
@@ -890,7 +908,7 @@ kbd {
 </table>
 </blockquote>
 
-<h4 id="toc_13">4.2.2 业务级错误码</h4>
+<h4 id="toc_14">4.2.2 业务级错误码</h4>
 
 <blockquote>
 <table>
@@ -911,6 +929,13 @@ kbd {
 </tbody>
 </table>
 </blockquote>
+
+<h2 id="toc_15">五、反馈与建议</h2>
+
+<ul>
+<li>GitHub地址：<a href="http://www.github.com/cpthack">@http://www.github.com/cpthack</a></li>
+<li>邮箱：<a href="mailto:1044559878@qq.com">1044559878@qq.com</a></li>
+</ul>
 
 
 

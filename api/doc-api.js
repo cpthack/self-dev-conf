@@ -17,18 +17,18 @@ script.src = url;
 document.head.appendChild(script);
 }
 
-var base-url="https://cpthack.github.io/self-dev-conf/api/";
+var baseUrl="https://cpthack.github.io/self-dev-conf/api/";
 
 // 插入左侧目录栏目节点
 document.write("<div id='tree' class='ztree'></div>");
 
 //同步加载相关js文件
 var newScripts = [ 
-	base-url+"js/jquery-1.4.4.min.js",
-	base-url+"js/jquery.ztree.core-3.5.js",
-	base-url+"js/jquery.ztree.all-3.5.js",
-	base-url+"js/ztree_toc.js",
-	base-url+"js/my-ztree-toc.js" 
+	baseUrl+"js/jquery-1.4.4.min.js",
+	baseUrl+"js/jquery.ztree.core-3.5.js",
+	baseUrl+"js/jquery.ztree.all-3.5.js",
+	baseUrl+"js/ztree_toc.js",
+	baseUrl+"js/my-ztree-toc.js" 
 		];
 // 迭代加载,callback为全部加载完成后的回调函数
 (function scriptRecurse(count, callback) {
@@ -44,8 +44,8 @@ var newScripts = [
 })(0);
 
 //异步写入相关css文件
-document.write("<link rel='stylesheet' href='"+base-url+"css/zTreeStyle/zTreeStyle.css' type='text/css'>");
-document.write("<link rel='stylesheet' href='"+base-url+"css/beatify.css' type='text/css'>");
+document.write("<link rel='stylesheet' href='"+baseUrl+"css/zTreeStyle/zTreeStyle.css' type='text/css'>");
+document.write("<link rel='stylesheet' href='"+baseUrl+"css/beatify.css' type='text/css'>");
 
 //设置左侧目录栏目节点的位置
 var oDiv = document.getElementById('tree');

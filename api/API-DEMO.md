@@ -1,46 +1,5 @@
 <!-- 该代码在生成html网页时，可以辅助生成左侧悬浮的目录导航 code start -->
-<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
-
-<script type="text/javascript" src="js/jquery.ztree.core-3.5.js"></script>
-
-<script type="text/javascript" src="js/jquery.ztree.all-3.5.js"></script>
-
-<script type="text/javascript" src="js/ztree_toc.js"></script>
-
-<link rel="stylesheet" href="css/zTreeStyle/zTreeStyle.css"
-	type="text/css">
-
-<link rel="stylesheet" href="css/beatify.css"
-	type="text/css">
-
-<script type="text/javascript">
-	$(document).ready(function() {
-		$('#tree').ztree_toc({
-			is_auto_number : false,
-			is_expand_all: true,			
-			is_highlight_selected_line: true,
-			is_posion_top:true,
-					ztreeStyle: {
-						width:'250px',
-						height:'auto',
-						overflow: 'auto',
-						position: 'fixed',
-						'z-index': 2147483647,
-						border: '1px solid #ccc',
-						left: '0',
-						top: '0'
-			 }
-		});
-	});
-</script>
-
-<div id="tree" class="ztree"></div>
-<!-- 
-主要参考：
-1、https://github.com/i5ting/i5ting_ztree_toc
-2、http://ruby-china.org/topics/17028
--->
-<!-- 如果要生成pdf文档的话，需要把代码块进行注释-->
+<script type="text/javascript" src="doc-api.js"></script>
 <!-- 该代码在生成html网页时，可以辅助生成左侧悬浮的目录导航 code end -->
 
 # xxx系统接口文档

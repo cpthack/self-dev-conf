@@ -461,16 +461,16 @@ kbd {
 
 <h2 id="toc_4">三、API文档</h2>
 
-<h3 id="toc_5">3.1 机器人相关接口说明</h3>
+<h3 id="toc_5">3.1 用户管理相关接口说明</h3>
 
-<h4 id="toc_6">3.1.1 增加机器人</h4>
+<h4 id="toc_6">3.1.1 增加用户</h4>
 
 <ul>
 <li><strong>请求URL</strong></li>
 </ul>
 
 <blockquote>
-<p><a href="#">api/v2/operating/newRobot</a></p>
+<p><a href="#">api/v2/operating/addUser</a></p>
 </blockquote>
 
 <ul>
@@ -498,12 +498,12 @@ kbd {
 <tr>
 <td style="text-align: left">uid</td>
 <td style="text-align: left">Long,<strong>不可为空</strong></td>
-<td style="text-align: left">机器人UID</td>
+<td style="text-align: left">用户UID</td>
 </tr>
 <tr>
 <td style="text-align: left">status</td>
 <td style="text-align: left">Integer,可为空</td>
-<td style="text-align: left">机器人可用性，默认可用 <strong>-1.不可使用 1.可用</strong></td>
+<td style="text-align: left">用户可用性，默认可用 <strong>-1.不可使用 1.可用</strong></td>
 </tr>
 </tbody>
 </table>
@@ -550,13 +550,13 @@ kbd {
   &quot;message&quot;: &quot;操作正确&quot;
 }</code></pre></div>
 
-<h4 id="toc_7">3.1.2 查看机器人</h4>
+<h4 id="toc_7">3.1.2 查看用户</h4>
 
 <ul>
 <li><p><strong>请求URL</strong></p>
 
 <blockquote>
-<p><a href="#">api/v2/operating/robotList</a></p>
+<p><a href="#">api/v2/operating/userList</a></p>
 </blockquote></li>
 <li><p><strong>请求方式</strong> </p>
 
@@ -579,7 +579,7 @@ kbd {
 <tr>
 <td style="text-align: left">status</td>
 <td style="text-align: left">Integer,可为空</td>
-<td style="text-align: left">机器人可用性 <strong>-1.不可使用 1.可用</strong></td>
+<td style="text-align: left">用户可用性 <strong>-1.不可使用 1.可用</strong></td>
 </tr>
 <tr>
 <td style="text-align: left">curPage</td>
@@ -656,13 +656,13 @@ kbd {
   &quot;hasRecords&quot;: true
 }</code></pre></div>
 
-<h4 id="toc_8">3.1.3 修改机器人可用性谢谢谢谢谢谢谢谢谢谢谢谢</h4>
+<h4 id="toc_8">3.1.3 修改用户可用性谢谢谢谢谢谢谢谢谢谢谢谢</h4>
 
 <ul>
 <li><p><strong>请求URL</strong></p>
 
 <blockquote>
-<p><a href="#">api/v2/operating/updateRobot</a></p>
+<p><a href="#">api/v2/operating/updateuser</a></p>
 </blockquote></li>
 <li><p><strong>请求方式</strong> </p>
 
@@ -685,12 +685,12 @@ kbd {
 <tr>
 <td style="text-align: left">uid</td>
 <td style="text-align: left">Long,<strong>不可为空</strong></td>
-<td style="text-align: left">机器人UID</td>
+<td style="text-align: left">用户UID</td>
 </tr>
 <tr>
 <td style="text-align: left">status</td>
 <td style="text-align: left">Integer,可为空</td>
-<td style="text-align: left">机器人可用性 <strong>-1.不可使用 1.可用</strong></td>
+<td style="text-align: left">用户可用性 <strong>-1.不可使用 1.可用</strong></td>
 </tr>
 </tbody>
 </table>
@@ -737,13 +737,13 @@ kbd {
   &quot;message&quot;: &quot;操作正确&quot;
 }</code></pre></div>
 
-<h4 id="toc_9">3.1.4 删除机器人</h4>
+<h4 id="toc_9">3.1.4 删除用户</h4>
 
 <ul>
 <li><p><strong>请求URL</strong></p>
 
 <blockquote>
-<p><a href="#">api/v2/operating/deleteRobot</a></p>
+<p><a href="#">api/v2/operating/deleteuser</a></p>
 </blockquote></li>
 <li><p><strong>请求方式</strong> </p>
 
@@ -766,7 +766,7 @@ kbd {
 <tr>
 <td style="text-align: left">uid</td>
 <td style="text-align: left">Long,<strong>不可为空</strong></td>
-<td style="text-align: left">机器人UID</td>
+<td style="text-align: left">用户UID</td>
 </tr>
 </tbody>
 </table>

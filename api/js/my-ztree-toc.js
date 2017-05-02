@@ -10,7 +10,8 @@ $(document).ready(function(){
 					overflow: 'auto',
 					position: 'fixed',
 					'z-index': 2147483647,
-					border: '1px solid #ccc'
+//					border: '1px solid #ccc'
+					
 		 }
 	});
 });

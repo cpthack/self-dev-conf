@@ -49,3 +49,7 @@ var oDiv = document.getElementById('tree');
 oDiv.style.position = 'fixed';
 oDiv.style.marginTop = '20px';
 oDiv.style.marginLeft = '-290px';
+oDiv.style.border='1px solid #ccc';
+oDiv.style.borderLeft='3px solid rgb(81, 130, 187)';
+
+

@@ -47,5 +47,5 @@ document.write("<link rel='stylesheet' href='css/beatify.css' type='text/css'>")
 //设置左侧目录栏目节点的位置
 var oDiv = document.getElementById('tree');
 oDiv.style.position = 'fixed';
-oDiv.style.top = '20';
-oDiv.style.marginLeft = '-280px';
+oDiv.style.marginTop = '20px';
+oDiv.style.marginLeft = '-290px';

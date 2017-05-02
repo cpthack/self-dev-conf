@@ -18,7 +18,7 @@
 			is_highlight_selected_line: true,
 			is_posion_top:true,
 					ztreeStyle: {
-						width:'30%',
+						width:'20%',
 						height:'100%',
 						overflow: 'auto',
 						position: 'fixed',

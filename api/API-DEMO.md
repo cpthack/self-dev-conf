@@ -9,7 +9,10 @@
 
 <link rel="stylesheet" href="css/zTreeStyle/zTreeStyle.css"
 	type="text/css">
-	
+
+<link rel="stylesheet" href="css/beatify.css"
+	type="text/css">
+
 <script type="text/javascript">
 	$(document).ready(function() {
 		$('#tree').ztree_toc({
@@ -18,8 +21,8 @@
 			is_highlight_selected_line: true,
 			is_posion_top:true,
 					ztreeStyle: {
-						width:'20%',
-						height:'100%',
+						width:'250px',
+						height:'auto',
 						overflow: 'auto',
 						position: 'fixed',
 						'z-index': 2147483647,
@@ -39,7 +42,6 @@
 -->
 <!-- 如果要生成pdf文档的话，需要把代码块进行注释-->
 <!-- 该代码在生成html网页时，可以辅助生成左侧悬浮的目录导航 code end -->
-
 
 # xxx系统接口文档
 
@@ -158,28 +160,31 @@
 #### 3.1.1 增加机器人
 
 - **请求URL**
+
 > [api/v2/operating/newRobot](#)
 
 - **请求方式** 
+
 >**POST**
 
 - **请求参数**
->| 请求参数   |  参数类型 | 参数说明  |
+
+| 请求参数   |  参数类型 | 参数说明  |
 | :-------- | :--------| :------ |
-| uid|  <mark>Long,**不可为空**</mark>| 机器人UID|
+| uid|  Long,**不可为空**| 机器人UID|
 | status|   Integer,可为空|  机器人可用性，默认可用 **-1.不可使用 1.可用**|
 
 - **返回数据**
  
->| 请求参数   |  参数类型 | 参数说明  |
+| 请求参数   |  参数类型 | 参数说明  |
 | :-------- | :--------| :------ |
 | success|   boolean|  请求成功与否|
 | code|   Integer|  执行结果code|
 | message|   String|  执行结果消息|
 
 - **返回示例**
->    
-```java 
+
+```
 {
   "success": true,
   "code": 200,
@@ -197,14 +202,16 @@
 >**GET**
 
 - **请求参数**
-> | 请求参数      |    参数类型 |  参数说明  |
+
+| 请求参数      |    参数类型 |  参数说明  |
 | :-------- | :--------| :------ |
 | status|   Integer,可为空| 机器人可用性 **-1.不可使用 1.可用**|
 | curPage|   Integer,可为空|  当前页|
 | pageSize|   Integer,可为空|  每页显示数量|
 
 - **返回数据**
-> | 返回参数   |  参数类型 |  参数说明 |
+
+| 返回参数   |  参数类型 |  参数说明 |
 | :-------- | :--------| :------ |
 | success|   boolean|  请求成功与否|
 | code|   Integer|  执行结果code|
@@ -212,8 +219,8 @@
 | results|   Object|  执行结果集|
 
 - **返回示例**
->    
-```java 
+  
+```
 {
   "success": true,
   "code": 200,
@@ -246,22 +253,23 @@
 >**POST**
 
 - **请求参数**
-> | 请求参数    |    参数类型 |  参数与说明  |
+
+| 请求参数    |    参数类型 |  参数与说明  |
 | :-------- | :--------| :------ |
-| uid|   <mark>Long,**不可为空**</mark>| 机器人UID|
+| uid|   Long,**不可为空**| 机器人UID|
 | status|   Integer,可为空| 机器人可用性 **-1.不可使用 1.可用**|
 
 - **返回数据**
-> | 返回参数  |   参数类型 |  参数说明 |
+
+| 返回参数  |   参数类型 |  参数说明 |
 | :-------- | :--------| :------ |
 | success|   boolean|  执行成功与否|
 | code|   Integer| 执行结果code|
 | message|   String|  执行结果消息|
 
 - **返回示例**
-
->    
-```java 
+   
+```
 {
   "success": true,
   "code": 200,
@@ -279,21 +287,22 @@
 >**POST**
 
 - **请求参数**
-> | 请求参数   |   参数类型 |  参数说明  |
+
+| 请求参数   |   参数类型 |  参数说明  |
 | :-------- | :--------| :------ |
-| uid|   <mark>Long,**不可为空**</mark>| 机器人UID|
+| uid|   Long,**不可为空**| 机器人UID|
 
 - **返回数据**
-> | 返回参数   |   参数类型 |   参数说明  |
+
+| 返回参数   |   参数类型 |   参数说明  |
 | :-------- | :--------| :------ |
 | success|   boolean| 请求成功与否|
 | code|   Integer|  执行结果code|
 | message|   String| 执行结果消息|
 
 - **返回示例**
-
->    
-```java 
+  
+```
 {
   "success": true,
   "code": 200,
@@ -324,7 +333,7 @@
 
 #### 4.2.1 系统级错误码
 
->| 错误代码 | 返回msg | 详细描述 |
+| 错误代码 | 返回msg | 详细描述 |
 |:------:|:-------------|:---------|
 | 400 | 系统错误，请稍候再试 | 请求参数有误 |
 | 401 | 系统错误，请稍候再试 | 用户未登录 |
@@ -334,7 +343,7 @@
 
 #### 4.2.2 业务级错误码
 
->| 错误代码 | 返回msg|详细描述 |
+| 错误代码 | 返回msg|详细描述 |
 |:-------:|:-----|:--------|
 | 1010    | xxxx   | xxxx |
 

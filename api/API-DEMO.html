@@ -341,6 +341,9 @@ kbd {
 <p><link rel="stylesheet" href="css/zTreeStyle/zTreeStyle.css"
     type="text/css"></p>
 
+<p><link rel="stylesheet" href="css/beatify.css"
+    type="text/css"></p>
+
 <script type="text/javascript">
     $(document).ready(function() {
         $('#tree').ztree_toc({
@@ -349,8 +352,8 @@ kbd {
             is_highlight_selected_line: true,
             is_posion_top:true,
                     ztreeStyle: {
-                        width:'30%',
-                        height:'100%',
+                        width:'250px',
+                        height:'auto',
                         overflow: 'auto',
                         position: 'fixed',
                         'z-index': 2147483647,
@@ -506,19 +509,25 @@ kbd {
 <h4 id="toc_6">3.1.1 增加机器人</h4>
 
 <ul>
-<li><p><strong>请求URL</strong></p>
+<li><strong>请求URL</strong></li>
+</ul>
 
 <blockquote>
 <p><a href="#">api/v2/operating/newRobot</a></p>
-</blockquote></li>
-<li><p><strong>请求方式</strong> </p>
+</blockquote>
+
+<ul>
+<li><strong>请求方式</strong> </li>
+</ul>
 
 <blockquote>
 <p><strong>POST</strong></p>
-</blockquote></li>
-<li><p><strong>请求参数</strong></p>
+</blockquote>
 
-<blockquote>
+<ul>
+<li><strong>请求参数</strong></li>
+</ul>
+
 <table>
 <thead>
 <tr>
@@ -531,7 +540,7 @@ kbd {
 <tbody>
 <tr>
 <td style="text-align: left">uid</td>
-<td style="text-align: left"><mark>Long,<strong>不可为空</strong></mark></td>
+<td style="text-align: left">Long,<strong>不可为空</strong></td>
 <td style="text-align: left">机器人UID</td>
 </tr>
 <tr>
@@ -541,11 +550,11 @@ kbd {
 </tr>
 </tbody>
 </table>
-</blockquote></li>
-<li><p><strong>返回数据</strong></p></li>
+
+<ul>
+<li><strong>返回数据</strong></li>
 </ul>
 
-<blockquote>
 <table>
 <thead>
 <tr>
@@ -573,19 +582,16 @@ kbd {
 </tr>
 </tbody>
 </table>
-</blockquote>
 
 <ul>
-<li><strong>返回示例</strong>
-&gt;<br>
-<code>java 
-{
-&quot;success&quot;: true,
-&quot;code&quot;: 200,
-&quot;message&quot;: &quot;操作正确&quot;
-}
-</code></li>
+<li><strong>返回示例</strong></li>
 </ul>
+
+<div><pre><code class="language-none">{
+  &quot;success&quot;: true,
+  &quot;code&quot;: 200,
+  &quot;message&quot;: &quot;操作正确&quot;
+}</code></pre></div>
 
 <h4 id="toc_7">3.1.2 查看机器人</h4>
 
@@ -600,9 +606,9 @@ kbd {
 <blockquote>
 <p><strong>GET</strong></p>
 </blockquote></li>
-<li><p><strong>请求参数</strong></p>
+<li><p><strong>请求参数</strong></p></li>
+</ul>
 
-<blockquote>
 <table>
 <thead>
 <tr>
@@ -630,10 +636,11 @@ kbd {
 </tr>
 </tbody>
 </table>
-</blockquote></li>
-<li><p><strong>返回数据</strong></p>
 
-<blockquote>
+<ul>
+<li><strong>返回数据</strong></li>
+</ul>
+
 <table>
 <thead>
 <tr>
@@ -666,32 +673,31 @@ kbd {
 </tr>
 </tbody>
 </table>
-</blockquote></li>
-<li><p><strong>返回示例</strong></p>
 
-<blockquote>
-<div><pre><code class="language-java">{
-&quot;success&quot;: true,
-&quot;code&quot;: 200,
-&quot;message&quot;: &quot;操作正确&quot;,
-&quot;results&quot;: [
-{
-  &quot;createdTs&quot;: 1471928107000,
-  &quot;updatedTs&quot;: 1471928107000,
-  &quot;id&quot;: 3,
-  &quot;uid&quot;: 23333,
-  &quot;useStatus&quot;: 1,(使用状态)
-  &quot;nickName&quot;: &quot;成佩涛&quot;,
-  &quot;avatar&quot;: &quot;http://7xljdd.com2.z0.glb.qiniucdn.com/fa767b500c58206f5f213a0fe4187e47.jpg&quot;
-}
-],
-&quot;curPage&quot;: 1,
-&quot;pageCount&quot;: 2,
-&quot;count&quot;: 2,
-&quot;hasRecords&quot;: true
-}</code></pre></div>
-</blockquote></li>
+<ul>
+<li><strong>返回示例</strong></li>
 </ul>
+
+<div><pre><code class="language-none">{
+  &quot;success&quot;: true,
+  &quot;code&quot;: 200,
+  &quot;message&quot;: &quot;操作正确&quot;,
+  &quot;results&quot;: [
+    {
+      &quot;createdTs&quot;: 1471928107000,
+      &quot;updatedTs&quot;: 1471928107000,
+      &quot;id&quot;: 3,
+      &quot;uid&quot;: 23333,
+      &quot;useStatus&quot;: 1,(使用状态)
+      &quot;nickName&quot;: &quot;成佩涛&quot;,
+      &quot;avatar&quot;: &quot;http://7xljdd.com2.z0.glb.qiniucdn.com/fa767b500c58206f5f213a0fe4187e47.jpg&quot;
+    }
+  ],
+  &quot;curPage&quot;: 1,
+  &quot;pageCount&quot;: 2,
+  &quot;count&quot;: 2,
+  &quot;hasRecords&quot;: true
+}</code></pre></div>
 
 <h4 id="toc_8">3.1.3 修改机器人可用性</h4>
 
@@ -706,9 +712,9 @@ kbd {
 <blockquote>
 <p><strong>POST</strong></p>
 </blockquote></li>
-<li><p><strong>请求参数</strong></p>
+<li><p><strong>请求参数</strong></p></li>
+</ul>
 
-<blockquote>
 <table>
 <thead>
 <tr>
@@ -721,7 +727,7 @@ kbd {
 <tbody>
 <tr>
 <td style="text-align: left">uid</td>
-<td style="text-align: left"><mark>Long,<strong>不可为空</strong></mark></td>
+<td style="text-align: left">Long,<strong>不可为空</strong></td>
 <td style="text-align: left">机器人UID</td>
 </tr>
 <tr>
@@ -731,10 +737,11 @@ kbd {
 </tr>
 </tbody>
 </table>
-</blockquote></li>
-<li><p><strong>返回数据</strong></p>
 
-<blockquote>
+<ul>
+<li><strong>返回数据</strong></li>
+</ul>
+
 <table>
 <thead>
 <tr>
@@ -762,17 +769,16 @@ kbd {
 </tr>
 </tbody>
 </table>
-</blockquote></li>
-<li><p><strong>返回示例</strong></p></li>
+
+<ul>
+<li><strong>返回示例</strong></li>
 </ul>
 
-<blockquote>
-<div><pre><code class="language-java">{
+<div><pre><code class="language-none">{
   &quot;success&quot;: true,
   &quot;code&quot;: 200,
   &quot;message&quot;: &quot;操作正确&quot;
 }</code></pre></div>
-</blockquote>
 
 <h4 id="toc_9">3.1.4 删除机器人</h4>
 
@@ -787,9 +793,9 @@ kbd {
 <blockquote>
 <p><strong>POST</strong></p>
 </blockquote></li>
-<li><p><strong>请求参数</strong></p>
+<li><p><strong>请求参数</strong></p></li>
+</ul>
 
-<blockquote>
 <table>
 <thead>
 <tr>
@@ -802,15 +808,16 @@ kbd {
 <tbody>
 <tr>
 <td style="text-align: left">uid</td>
-<td style="text-align: left"><mark>Long,<strong>不可为空</strong></mark></td>
+<td style="text-align: left">Long,<strong>不可为空</strong></td>
 <td style="text-align: left">机器人UID</td>
 </tr>
 </tbody>
 </table>
-</blockquote></li>
-<li><p><strong>返回数据</strong></p>
 
-<blockquote>
+<ul>
+<li><strong>返回数据</strong></li>
+</ul>
+
 <table>
 <thead>
 <tr>
@@ -838,17 +845,16 @@ kbd {
 </tr>
 </tbody>
 </table>
-</blockquote></li>
-<li><p><strong>返回示例</strong></p></li>
+
+<ul>
+<li><strong>返回示例</strong></li>
 </ul>
 
-<blockquote>
-<div><pre><code class="language-java">{
+<div><pre><code class="language-none">{
   &quot;success&quot;: true,
   &quot;code&quot;: 200,
   &quot;message&quot;: &quot;操作正确&quot;
 }</code></pre></div>
-</blockquote>
 
 <h2 id="toc_10">四、常见问题指引</h2>
 
@@ -871,7 +877,6 @@ kbd {
 
 <h4 id="toc_13">4.2.1 系统级错误码</h4>
 
-<blockquote>
 <table>
 <thead>
 <tr>
@@ -909,11 +914,9 @@ kbd {
 </tr>
 </tbody>
 </table>
-</blockquote>
 
 <h4 id="toc_14">4.2.2 业务级错误码</h4>
 
-<blockquote>
 <table>
 <thead>
 <tr>
@@ -931,7 +934,6 @@ kbd {
 </tr>
 </tbody>
 </table>
-</blockquote>
 
 <h2 id="toc_15">五、反馈与建议</h2>
 

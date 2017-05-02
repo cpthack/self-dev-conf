@@ -1,0 +1,45 @@
+table {
+    width: 100%; /*表格宽度*/
+    max-width: 65em; /*表格最大宽度，避免表格过宽*/
+    border: 1px solid #dedede; /*表格外边框设置*/
+    margin: 15px auto; /*外边距*/
+    border-collapse: collapse; /*使用单一线条的边框*/
+    empty-cells: show; /*单元格无内容依旧绘制边框*/
+}
+
+table th,
+table td {
+  height: 35px; /*统一每一行的默认高度*/
+  border: 1px solid #dedede; /*内部边框样式*/
+  padding: 0 10px; /*内边距*/
+}
+
+/* Table Head */
+table thead th {
+background-color: rgb(81, 130, 187);
+color: #fff;
+border-bottom-width: 0;
+}
+
+/* Column Style */
+table td {
+color: #000;
+}
+/* Heading and Column Style */
+table tr, table th {
+border-width: 1px;
+border-style: solid;
+border-color: rgb(81, 130, 187);
+}
+
+/* Padding and font style */
+table td, table th {
+padding: 5px 10px;
+font-size: 12px;
+font-family: Verdana;
+font-weight: bold;
+}
+
+table tr:hover {
+    background: #efefef; 
+}
